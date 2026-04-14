@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кавоманія</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero page-block" id="home">
+    <div class="hero__content">
+      <img src="images/hero.jpg" alt="Кава та кавові зерна" class="hero__image">
+      <div class="hero__text">
+        <h1>Кавоманія</h1>
+        <a href="#catalog" class="btn">Замовити зараз</a>
+      </div>
+    </div>
+    <div class="top-contacts">
+      <p>kavomania@gmail.com</p>
+      <p>+38 (063) 657-63-77</p>
+      <p>м. Київ, вул. Ігоря Шамо, 10</p>
+    </div>
+  </header>
+
+  <section class="page-block">
+    <nav class="nav-bar" aria-label="Основна навігація">
+      <div class="logo">☕</div>
+      <ul class="menu">
+        <li><a href="#home">Головна</a></li>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#cart">Кошик</a></li>
+        <li><a href="#account">Особистий кабінет</a></li>
+      </ul>
+    </nav>
+
+    <main class="catalog" id="catalog">
+      <form class="search" action="#" method="get">
+        <label for="search-name" class="visually-hidden">Пошук за назвою</label>
+        <input id="search-name" type="text" placeholder="Пошук за назвою">
+        <button type="submit" aria-label="Пошук">🔍</button>
+      </form>
+
+      <h2>Каталог товарів</h2>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/product1.jpg" alt="Арабіка Ефіопія">
+          <h3>Арабіка Ефіопія</h3>
+          <p class="price">860 грн</p>
+        </article>
+
+        <article class="product-card">
+          <img src="images/product2.jpg" alt="Капучинатор ручний">
+          <h3>Капучинатор ручний</h3>
+          <p class="price">649 грн</p>
+        </article>
+
+        <article class="product-card">
+          <img src="images/product3.jpg" alt="Кавомолка електрична">
+          <h3>Кавомолка електрична</h3>
+          <p class="price">780 грн</p>
+        </article>
+      </div>
+    </main>
+  </section>
+
+  <section class="page-block" id="cart">
+    <nav class="nav-bar" aria-label="Навігація кошика">
+      <div class="logo">☕</div>
+      <ul class="menu">
+        <li><a href="#home">Головна</a></li>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#cart">Кошик</a></li>
+        <li><a href="#account">Особистий кабінет</a></li>
+      </ul>
+    </nav>
+
+    <div class="cart-layout">
+      <div class="cart-info">
+        <h2>Мій кошик</h2>
+        <p>Ваш кошик поки порожній</p>
+        <a href="#catalog" class="btn">Назад до каталогу</a>
+      </div>
+
+      <aside class="offer">
+        <h3>Вигідна пропозиція:</h3>
+        <img src="images/offer.jpg" alt="Пакування кави Arabika Ethiopia">
+      </aside>
+    </div>
+  </section>
+
+  <section class="page-block" id="account">
+    <nav class="nav-bar" aria-label="Навігація кабінету">
+      <div class="logo">☕</div>
+      <ul class="menu">
+        <li><a href="#home">Головна</a></li>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#cart">Кошик</a></li>
+        <li><a href="#account">Особистий кабінет</a></li>
+      </ul>
+    </nav>
+
+    <div class="account-box">
+      <h2>Особистий кабінет</h2>
+      <form class="login-form" action="#" method="post">
+        <label for="login">Логін</label>
+        <input id="login" type="text" name="login">
+
+        <label for="password">Пароль</label>
+        <input id="password" type="password" name="password">
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Увійти</button>
+          <button type="button" class="btn">Зареєструватись</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
